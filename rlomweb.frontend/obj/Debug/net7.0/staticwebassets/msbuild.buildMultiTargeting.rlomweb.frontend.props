@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\rlomweb.frontend.props" />
-</Project>
