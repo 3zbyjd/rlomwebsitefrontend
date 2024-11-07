@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eDYpboWqIJCdmdptEcRIAX2rsG3rf4z+2wyWe1bUw/MF8eadeUQHQUv00mvKTWfpx6IeR1LWCYlwzx84/9rhzQ==",
+  "dgSpecHash": "PGtI/c/X8RU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\drobe\\source\\repos\\RlomSite\\rlomsitebackend\\rlomwebsitefrontend\\rlomrestores.frontend\\rlomrestores.frontend.csproj",
+  "projectFilePath": "C:\\Users\\drobe\\source\\repos\\RLOMBlazorSite.Frontend\\rlomwebsitefrontend\\rlomrestores.frontend\\rlomrestores.frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\drobe\\.nuget\\packages\\blazor.bootstrap\\3.1.0\\blazor.bootstrap.3.1.0.nupkg.sha512",
     "C:\\Users\\drobe\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.4\\microsoft.aspnetcore.authorization.8.0.4.nupkg.sha512",
