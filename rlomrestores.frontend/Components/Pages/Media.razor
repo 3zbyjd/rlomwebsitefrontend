@@ -1,0 +1,22 @@
+@page "/Media"
+@using rlomrestores.frontend.Components.Layout
+@layout DashboardLayout
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+    <DashboardNavMenu />
+    <form method="post">
+        <div class="mb-3 container-sm">
+            <label for="postTitleInput" class="form-label">Media Name</label>
+            <input type="text" class="form-control" id="postTitleInput" placeholder="Post Title">
+        </div>
+        <div class="mb-3 container-sm">
+            <label for="formFile" class="form-label">Select Media File</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3 container-sm">
+            <button type="button" class="btn btn-outline-primary">Save</button>
+            <button type="button" class="btn btn-outline-primary">Cancel</button>
+        </div>
+    </form>
+</div>
