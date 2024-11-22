@@ -1,22 +1,52 @@
+@using System.IO
 @page "/Media"
 @using rlomrestores.frontend.Components.Layout
 @layout DashboardLayout
 
-<!-- Page Wrapper -->
-<div id="wrapper">
-    <DashboardNavMenu />
-    <form method="post">
+<div id="wrapper" style="background-color: blueviolet;">
+    <form method="post" class="container-fluid" style="background-color: yellow;">
+
         <div class="mb-3 container-sm">
             <label for="postTitleInput" class="form-label">Media Name</label>
-            <input type="text" class="form-control" id="postTitleInput" placeholder="Post Title">
+            <input type="text" class="form-control" id="postTitleInput" placeholder="Media Name">
         </div>
-        <div class="mb-3 container-sm">
+
+        <div>
+            <Field>
+                <FilePicker Multiple Upload="OnFileUpload" ShowMode="FilePickerShowMode.List" />
+            </Field>
+        </div>
+
+        @* <div class="mb-3 container-lg">
             <label for="formFile" class="form-label">Select Media File</label>
             <input class="form-control" type="file" id="formFile">
-        </div>
-        <div class="mb-3 container-sm">
+        </div> *@
+
+        @* <div class="mb-3 container-sm">
             <button type="button" class="btn btn-outline-primary">Save</button>
             <button type="button" class="btn btn-outline-primary">Cancel</button>
-        </div>
+        </div> *@
     </form>
 </div>
+
+@code {
+
+    async Task OnFileUpload(FileUploadEventArgs e)
+    {
+        try
+        {
+            using (MemoryStream result = new MemoryStream())
+            {
+                await e.File.OpenReadStream(long.MaxValue).CopyToAsync(result);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            this.StateHasChanged();
+        }
+    }
+}
