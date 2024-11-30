@@ -1,30 +1,47 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">rlomrestores.frontend</a>
-    </div>
+﻿@* <div class="top-row ps-3 navbar navbar-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="">rlomrestores.frontend</a>
+</div>
 </div>
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
+<nav class="flex-column">
+<div class="nav-item px-3">
+<NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+<span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+</NavLink>
 </div>
 
+<div class="nav-item px-3">
+<NavLink class="nav-link" href="counter">
+<span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+</NavLink>
+</div>
+
+<div class="nav-item px-3">
+<NavLink class="nav-link" href="weather">
+<span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+</NavLink>
+</div>
+</nav>
+</div> *@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: black;">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">Redeeming Love Outreach Ministries</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarResponse" aria-controls="navgarResponsive" aria-expanded="false"
+            aria-label="navbar-toggler navigation">
+            Menu
+        </button>
+        <div class="collaps navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

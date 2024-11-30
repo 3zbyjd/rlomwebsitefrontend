@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="Blazor.Bootstrap" Version="3.1.0" />
+    <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.6.2" />
+    <PackageReference Include="Blazorise.Tailwind" Version="1.6.2" />
   </ItemGroup>
 
 </Project>
